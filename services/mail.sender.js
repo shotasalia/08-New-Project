@@ -11,8 +11,8 @@ module.exports = class EmailSender {
             port: 465,
             auth: {
                 // aq aris mailis paroli da id shesayvani
-                user: 'mail_user',
-                pass: 'mail_password',
+                user: 's.salia@gtu.ge',
+                pass: 'miyvarxarsal',
             },
         })
     }

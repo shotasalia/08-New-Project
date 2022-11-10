@@ -29,7 +29,7 @@ const sendJson = (req,res,next) => {
         mail: mail
     }
     const html = '123'
-    const text1 = `<b>datetime:${datetime}<br>, adult:${adult}<br>, children: ${children}<br>,msg:${msg}<br>, mail: ${mail}<br></b>`
+    const text1 = `<b>datetime:${datetime}, <br>adult:${adult}, <br>children: ${children}, <br>msg:${msg}, <br>mail: ${mail}<br></b>`
 
     const Sent1 = new EmailSender()
     Sent1.sendMessage(from, to, subject, text1, html).then(()=> {

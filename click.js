@@ -1,15 +1,14 @@
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
-const x = 'shota'
 
-const y = bcrypt.hash(x, 10).then((result)=>{
-    return this.result
-}).catch((err)=>{
-    return err
+const password = 'shota'
+
+let x = 'gio'
+const promise = bcrypt.hash(password, 10)
+.then((result)=>{
+
 })
+.catch((err)=>{console.log(err)})
 
-console.log(bind(y))
 
-const result = module.y
-const realresult = result.bind(module)
-console.log(realresult)
+console.log(x)
